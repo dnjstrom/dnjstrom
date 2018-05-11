@@ -2,6 +2,8 @@
 path: "/blog/hello-world"
 date: "2017-07-12T17:12:33.962Z"
 title: "My First Gatsby Post"
+cover_image: "./kitten.jpg"
+tags: design, development
 ---
 
 Oooooh-weeee, my first blog post!
@@ -11,7 +13,7 @@ const greet = () => console.log("Hello, world!")
 greet()
 ```
 
-![Some text here](../../img/kitten.jpg)
+![Some text here](./kitten.jpg)
 
 ## Bene gravi
 

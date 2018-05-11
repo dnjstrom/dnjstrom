@@ -4,6 +4,8 @@ import BlogPostSummary from "../../components/blog-post-summary"
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
+  console.log(data)
+
   return (
     <BlogLayout>
       {posts
@@ -17,6 +19,7 @@ export default function Index({ data }) {
               date={post.frontmatter.date}
               excerpt={post.excerpt}
               tags=""
+              image={post.frontmatter.cover_image.childImageSharp}
             />
           )
         })}
@@ -35,6 +38,14 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
+            cover_image {
+              publicURL
+              childImageSharp {
+                sizes(maxWidth: 1024) {
+                  ...GatsbyImageSharpSizes_withWebp_tracedSVG
+                }
+              }
+            }
           }
         }
       }

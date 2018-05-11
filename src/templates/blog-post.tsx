@@ -1,6 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import "prismjs/themes/prism-solarizedlight.css"
+import Img from "gatsby-image"
 import BlogLayout from "../components/blog-layout"
 
 export default function Template({ data }) {
@@ -9,6 +10,7 @@ export default function Template({ data }) {
     <BlogLayout>
       <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
       <article>
+        <Img sizes={post.frontmatter.cover_image.childImageSharp.sizes} />
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
@@ -24,6 +26,14 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        cover_image {
+          publicURL
+          childImageSharp {
+            sizes(maxWidth: 1024) {
+              ...GatsbyImageSharpSizes_withWebp_tracedSVG
+            }
+          }
+        }
       }
     }
   }
