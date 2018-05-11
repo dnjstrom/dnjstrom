@@ -11,7 +11,7 @@ import GithubIcon from "../components/github-icon"
 
 const IndexPage = () => (
   <Column>
-    <PageTitle>Hello.</PageTitle>
+    <PageTitle animate>Hello.</PageTitle>
     <Paragraph>
       I'm <em>Daniel</em>, a web developer, and this is where I write about{" "}
       <em>thoughts</em> I've had or <em>things</em> I did.
