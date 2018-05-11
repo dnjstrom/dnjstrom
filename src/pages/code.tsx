@@ -1,47 +1,23 @@
 import React from "react"
+import Navbar from "../components/navbar"
+import Column from "../components/column"
+import PageTitle from "../components/page-title"
+import Paragraph from "../components/paragraph"
 
-import styled from "styled-components"
-import Link from "../components/link"
-
-const Headline = styled.h1`
-  font-size: 30px;
-`
-
-const Paragraph = styled.p`
-  font-size: 16px;
-`
-
-const Tiles = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-  & > * {
-    width: 300px;
-  }
-`
-
-const Playground = () => (
+const CodePage = ({}) => (
   <div>
-    <Headline>Playground</Headline>
-    <Paragraph>
-      Here you'll be able to see a sample of experiments of varying quality.
-    </Paragraph>
-
-    <Tiles>
-      <div
-        label="Project"
-        thumbnail="https://placekitten.com/300/300"
-        heading="LMVL"
-        link={
-          <Link to="http://laboratoriemedicinvastmanland.se/#!/">LMVL</Link>
-        }
-      >
-        Some text here
-      </div>
-    </Tiles>
+    <Navbar />
+    <Column spacing="1rem">
+      <PageTitle>Code.</PageTitle>
+      <Paragraph>
+        Things I’ve <em>built</em> that I feel is neat in some way.
+      </Paragraph>
+      <Paragraph>
+        This section is currently <em>under construction</em>. Do check back in
+        a while!
+      </Paragraph>
+    </Column>
   </div>
 )
 
-export default Playground
+export default CodePage

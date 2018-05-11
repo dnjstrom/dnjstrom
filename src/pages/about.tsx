@@ -50,7 +50,10 @@ export default AboutPage
 export const pageQuery = graphql`
   query AvatarImageQuery {
     imgAvatar: imageSharp(id: { regex: "/avatar/" }) {
-      sizes(maxWidth: 1240) {
+      sizes(
+        maxWidth: 1240
+        traceSVG: { background: "#fcf3d9", color: "#F2C94C" }
+      ) {
         ...GatsbyImageSharpSizes_withWebp_tracedSVG
       }
     }
