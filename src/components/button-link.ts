@@ -25,8 +25,8 @@ const ButtonLink = styled(Link)`
     }
   `};
 
-  color: ${({ fg = "white" }: { fg: string }) => fg};
-  text-decoration: none;
+  color: ${({ fg = "white" }: { fg: string }) => fg} !important;
+  text-decoration: none !important;
   text-align: center;
 `
 

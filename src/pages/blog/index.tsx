@@ -1,24 +1,26 @@
 import React from "react"
-import Link from "gatsby-link"
+import BlogLayout from "../../components/blog-layout"
+import BlogPostSummary from "../../components/blog-post-summary"
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <div className="blog-posts">
+    <BlogLayout>
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
           return (
-            <div className="blog-post-preview" key={post.id}>
-              <h1>
-                <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-              </h1>
-              <h2>{post.frontmatter.date}</h2>
-              <p>{post.excerpt}</p>
-            </div>
+            <BlogPostSummary
+              key={post.id}
+              title={post.frontmatter.title}
+              path={post.frontmatter.path}
+              date={post.frontmatter.date}
+              excerpt={post.excerpt}
+              tags=""
+            />
           )
         })}
-    </div>
+    </BlogLayout>
   )
 }
 

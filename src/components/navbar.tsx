@@ -69,7 +69,7 @@ const Menu = ({ isOpen = false, onClick }) => (
 )
 
 class Navbar extends React.Component {
-  private state = {
+  public state = {
     isOpen: false,
   }
 

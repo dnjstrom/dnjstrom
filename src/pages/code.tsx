@@ -1,7 +1,7 @@
 import React from "react"
 
-import Link from "gatsby-link"
 import styled from "styled-components"
+import Link from "../components/link"
 
 const Headline = styled.h1`
   font-size: 30px;

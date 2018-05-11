@@ -1,19 +1,18 @@
 import React from "react"
 import Helmet from "react-helmet"
+import "prismjs/themes/prism-solarizedlight.css"
+import BlogLayout from "../components/blog-layout"
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
   return (
-    <div className="blog-post-container">
+    <BlogLayout>
       <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
-      <div className="blog-post">
+      <article>
         <h1>{post.frontmatter.title}</h1>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
-      </div>
-    </div>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </article>
+    </BlogLayout>
   )
 }
 

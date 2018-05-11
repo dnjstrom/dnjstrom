@@ -7,6 +7,15 @@ import "./main.css"
 
 const App = styled.main`
   margin: 1.5rem;
+
+  a {
+    color: #2d9cdb;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `
 
 const Layout: React.SFC<ILayoutProps> = ({ children }) => (
