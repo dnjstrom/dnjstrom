@@ -17,6 +17,7 @@
     "gatsby-plugin-styled-components": "^2.0.11",
     "gatsby-plugin-typescript": "^1.4.20",
     "gatsby-source-filesystem": "^1.5.35",
+    "gatsby-transformer-remark": "^1.7.41",
     "gatsby-transformer-sharp": "^1.6.24",
     "polished": "^1.9.2",
     "prettier": "^1.12.1",
