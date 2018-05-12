@@ -9,7 +9,11 @@ const GithubIcon = () => (
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       style={{ width: 50, height: 50, strokeWidth: 3 }}
+      role="img"
+      aria-label="Github - Click here to browse my code."
     >
+      <title>Github</title>
+      <desc>Click here to browse my code.</desc>
       <g id="github">
         <path
           id="Oval"

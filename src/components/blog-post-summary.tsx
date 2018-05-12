@@ -18,16 +18,15 @@ const BlogPostSummary: SFC<IBlogPostSummary> = ({
   tags,
   path,
   date,
-}) =>
-  console.log(image) || (
-    <article>
-      <Img title={title} alt={title} sizes={image.sizes} />
-      <h2>{title}</h2>
-      <p>{date}</p>
-      <p>{tags}</p>
-      <p>{excerpt}</p>
-      <Link to={path}>Read more</Link>
-    </article>
-  )
+}) => (
+  <article>
+    <Img title={title} alt={title} sizes={image.sizes} />
+    <h2>{title}</h2>
+    <p>{date}</p>
+    <p>{tags}</p>
+    <p>{excerpt}</p>
+    <Link to={path}>Read more</Link>
+  </article>
+)
 
 export default BlogPostSummary

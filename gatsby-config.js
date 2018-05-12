@@ -53,5 +53,36 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/img/icon.png",
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: true,
+          yandex: false,
+          windows: true,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Daniel Ström",
+        short_name: "dnjstrom",
+        start_url: "/",
+        background_color: "#FFFFFF",
+        theme_color: "#F2C94C",
+        display: "minimal-ui",
+        icon: "src/img/icon.png",
+      },
+    },
+    "gatsby-plugin-offline", // Needs to be after gatsby-plugin-manifest
   ],
 }

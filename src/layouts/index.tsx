@@ -21,6 +21,7 @@ const App = styled.main`
 const Layout: React.SFC<ILayoutProps> = ({ children }) => (
   <div>
     <Helmet>
+      <html lang="en" />
       <title>Daniel Ström</title>
       <meta name="description" content="Sample" />
       <meta name="keywords" content="sample, something" />

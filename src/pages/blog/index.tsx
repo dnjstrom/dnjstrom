@@ -4,7 +4,6 @@ import BlogPostSummary from "../../components/blog-post-summary"
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
-  console.log(data)
 
   return (
     <BlogLayout>

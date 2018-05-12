@@ -9,7 +9,11 @@ const TwitterIcon = () => (
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       style={{ width: 50, height: 50, strokeWidth: 3 }}
+      role="img"
+      aria-label="Twitter - Click here to visit my feed."
     >
+      <title>Twitter</title>
+      <desc>Click here to visit my feed.</desc>
       <g id="twitter">
         <path
           id="Oval"
