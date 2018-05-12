@@ -1,5 +1,6 @@
 import Link from "gatsby-link"
-import { darken, saturate } from "polished"
+import darken from "polished/lib/color/darken"
+import saturate from "polished/lib/color/saturate"
 import styled, { css } from "styled-components"
 
 const ButtonLink = styled(Link)`
