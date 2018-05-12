@@ -16,6 +16,7 @@
     "gatsby-plugin-sharp": "^1.6.44",
     "gatsby-plugin-styled-components": "^2.0.11",
     "gatsby-plugin-typescript": "^1.4.20",
+    "gatsby-plugin-webpack-bundle-analyzer": "^0.1.1",
     "gatsby-remark-copy-linked-files": "^1.5.32",
     "gatsby-remark-images": "^1.5.63",
     "gatsby-remark-prismjs": "^2.0.2",
