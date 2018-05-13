@@ -17,7 +17,7 @@ export default function Index({ data }) {
               path={post.frontmatter.path}
               date={post.frontmatter.date}
               excerpt={post.excerpt}
-              tags=""
+              tags={post.frontmatter.tags}
               image={post.frontmatter.cover_image.childImageSharp}
             />
           )
@@ -37,6 +37,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
+            tags
             cover_image {
               publicURL
               childImageSharp {

@@ -10,14 +10,14 @@ import TwitterIcon from "../components/twitter-icon"
 import GithubIcon from "../components/github-icon"
 
 const IndexPage = () => (
-  <Column>
+  <Column spacing="1.5rem">
     <PageTitle animate>Hello.</PageTitle>
     <Paragraph>
       I'm <em>Daniel</em>, a web developer, and this is where I write about{" "}
       <em>thoughts</em> I've had or <em>things</em> I've done.
     </Paragraph>
 
-    <Column>
+    <Column spacing=".5rem">
       <ButtonLink to="/about" bg="#F2C94C">
         About
       </ButtonLink>

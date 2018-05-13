@@ -6,6 +6,7 @@ import styled, { css } from "styled-components"
 const ButtonLink = styled(Link)`
   display: block;
   font-weight: bold;
+  font-size: 1.2rem;
   padding: 1.4rem 2rem;
   outline: none;
   ${({ bg = "#333" }: { bg: string }) => css`

@@ -6,7 +6,9 @@ import styled from "styled-components"
 import "./main.css"
 
 const App = styled.main`
-  margin: 1.5rem;
+  max-width: 550px;
+  padding: 1.5rem;
+  margin: 0 auto;
 
   a {
     color: #2d9cdb;
