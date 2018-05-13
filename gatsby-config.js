@@ -35,7 +35,10 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          "gatsby-remark-external-links",
           "gatsby-remark-copy-linked-files",
+          "gatsby-remark-autolink-headers",
+          "gatsby-remark-smartypants",
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -48,6 +51,22 @@ module.exports = {
               classPrefix: "language-",
               inlineCodeMarker: null,
               aliases: {},
+            },
+          },
+          {
+            resolve: "gatsby-remark-emojis",
+            options: {
+              active: true,
+              class: "emoji-icon",
+              size: 64,
+              styles: {
+                display: "inline",
+                margin: "0",
+                "margin-top": "1px",
+                position: "relative",
+                top: "5px",
+                width: "25px",
+              },
             },
           },
         ],
