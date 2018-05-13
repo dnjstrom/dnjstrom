@@ -10,7 +10,7 @@ const wiggle = keyframes`
   }
 `
 
-const PageTitle = styled.h1`
+const PageTitle = styled.h2`
   line-height: 6rem;
   font-size: 6rem;
   font-weight: bold;
@@ -22,7 +22,8 @@ const PageTitle = styled.h1`
     `
       animation: ${wiggle} 100ms alternate;
       animation-timing-function: ease-in-out;
-      animation-iteration-count: 5;
+      animation-iteration-count: 4;
+      animation-delay: 500ms;
     `};
 `
 

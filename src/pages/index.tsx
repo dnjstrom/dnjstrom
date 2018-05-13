@@ -14,7 +14,7 @@ const IndexPage = () => (
     <PageTitle animate>Hello.</PageTitle>
     <Paragraph>
       I'm <em>Daniel</em>, a web developer, and this is where I write about{" "}
-      <em>thoughts</em> I've had or <em>things</em> I did.
+      <em>thoughts</em> I've had or <em>things</em> I've done.
     </Paragraph>
 
     <Column>

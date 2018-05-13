@@ -9,9 +9,13 @@ import LinkedinIcon from "../components/linkedin-icon"
 import TwitterIcon from "../components/twitter-icon"
 import GithubIcon from "../components/github-icon"
 import Navbar from "../components/navbar"
+import { Helmet } from "react-helmet"
 
 const AboutPage = ({ data }) => (
   <div>
+    <Helmet>
+      <title>Daniel Ström - About</title>
+    </Helmet>
     <Navbar />
     <Column spacing="1rem">
       <PageTitle>About.</PageTitle>
@@ -32,8 +36,8 @@ const AboutPage = ({ data }) => (
       </Paragraph>
 
       <Paragraph>
-        If you’d like to get in contact you can find me on any of the below
-        sites:
+        If you’d like to get in contact with me you can find me on any of the
+        below sites:
       </Paragraph>
 
       <Row>
