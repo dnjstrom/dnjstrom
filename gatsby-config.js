@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Indiscriminate fascination",
+    siteUrl: `https://dnjstrom.se`,
   },
   plugins: [
     "gatsby-plugin-preact",
@@ -92,6 +93,7 @@ module.exports = {
         },
       },
     },
+    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
