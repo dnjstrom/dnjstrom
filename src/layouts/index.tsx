@@ -25,8 +25,8 @@ const Layout: React.SFC<ILayoutProps> = ({ children }) => (
     <Helmet>
       <html lang="en" />
       <title>Daniel Ström</title>
-      <meta name="description" content="Sample" />
-      <meta name="keywords" content="sample, something" />
+      <meta name="description" content="I'm Daniel, a web developer, and this is where I write about thoughts I've had or things I've done." />
+      <meta name="keywords" content="blog, tech, programming, software development, culture, leadership, coaching" />
     </Helmet>
 
     <App>

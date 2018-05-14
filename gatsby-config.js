@@ -1,16 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: "Indiscriminate fascination",
+    title: "Daniel Ström",
+    description:
+      "I'm Daniel, a web developer, and this is where I write about thoughts I've had or things I've done.",
     siteUrl: `https://dnjstrom.se`,
   },
   plugins: [
     "gatsby-plugin-preact",
+    "gatsby-plugin-lodash",
     {
       resolve: "gatsby-plugin-webpack-bundle-analyzer",
       options: {
         analyzerPort: 3000,
-        disable: true,
-        // production: true,
+        // disable: true,
+        production: true,
       },
     },
     "gatsby-plugin-react-helmet",

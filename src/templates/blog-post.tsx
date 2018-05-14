@@ -15,7 +15,10 @@ export default function Template({ data }) {
   const { markdownRemark: post, imgAvatar } = data
   return (
     <BlogLayout>
-      <Helmet title={`Daniel - ${post.frontmatter.title}`} />
+      <Helmet>
+        <title>{`Daniel - ${post.frontmatter.title}`}</title>
+        <meta name="description" content={post.excerpt} />
+      </Helmet>
       <article>
         <Cover sizes={post.frontmatter.cover_image.childImageSharp.sizes} />
         <Headline>{post.frontmatter.title}</Headline>
@@ -36,6 +39,7 @@ export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      excerpt
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
