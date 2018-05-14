@@ -78,7 +78,6 @@ module.exports = {
     },
     "gatsby-plugin-catch-links",
     "gatsby-plugin-remove-trailing-slashes",
-    "gatsby-plugin-feed",
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
