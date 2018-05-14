@@ -93,6 +93,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: "#27AE60",
+        showSpinner: false, // Disable the loading spinner.
+      },
+    },
     "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-manifest`,
