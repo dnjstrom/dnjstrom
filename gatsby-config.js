@@ -72,6 +72,8 @@ module.exports = {
         ],
       },
     },
+    "gatsby-plugin-catch-links",
+    "gatsby-plugin-remove-trailing-slashes",
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
@@ -103,5 +105,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline", // Needs to be after gatsby-plugin-manifest
+    "gatsby-plugin-netlify", // make sure to put last in the array
   ],
 }
