@@ -12,8 +12,8 @@ module.exports = {
       resolve: "gatsby-plugin-webpack-bundle-analyzer",
       options: {
         analyzerPort: 3000,
-        // disable: true,
-        production: true,
+        disable: true,
+        // production: true,
       },
     },
     "gatsby-plugin-react-helmet",
