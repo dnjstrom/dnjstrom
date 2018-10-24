@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/app-13e6b16a230148e09ccf.js","ee55f1919d4fe6e283cfafdae43d3718"],["/app-19a59b020a9f3cd9588d.js","677d11273f3a9e62980773fa1ad5cb50"],["/app-43bc5fbf1623ff8f1cf7.js","7980e8dfbbc222765002498939767cea"],["/app-4bac57f08d61130731c2.js","279805c09543161a3f8ea819b9922897"],["/app-afca78d1afefba8db780.js","7c121164d950f56935ec4efaeca8384c"],["/commons-218c64be459eb41c199b.js","60016154d35ec385de9d9f69f2beddff"],["/commons-23b416db44a880b7aff3.js","5f3b8827d4fb030632e94deb75aa834d"],["/commons-c8e7307cc7926479a9f7.js","ffdeca48f11a5ecf52502031928b2ae2"],["/commons-e2ae4ca2e6933cda6c93.js","b8325a8b469ca855bb1796dff75627a6"],["/commons-ebb08adda5783ced737e.js","0ef648c26011973a1f7f4d17b7ed8c80"],["/index.html","17612464d8bf67f6d8a3fb95664b5794"],["/manifest.webmanifest","ac2331ffa890a7fbb0c904c9079ef4af"],["/offline-plugin-app-shell-fallback/index.html","80a3aa0ad8221eaaf3b1ca5e81e09b62"]];
+var precacheConfig = [["/app-13e6b16a230148e09ccf.js","ee55f1919d4fe6e283cfafdae43d3718"],["/app-19a59b020a9f3cd9588d.js","677d11273f3a9e62980773fa1ad5cb50"],["/app-43bc5fbf1623ff8f1cf7.js","7980e8dfbbc222765002498939767cea"],["/app-4bac57f08d61130731c2.js","279805c09543161a3f8ea819b9922897"],["/app-54359c4c61e06f9a60b1.js","cf1073d734c0877e2257e13e9dd40dd2"],["/app-7a97d414e82e92339a3e.js","34c98426c8275b71e6bb3d7c36a339ec"],["/app-afca78d1afefba8db780.js","7c121164d950f56935ec4efaeca8384c"],["/app-c940d20926682780bb1d.js","47484bf625d35372ab87c440523cbd18"],["/commons-218c64be459eb41c199b.js","60016154d35ec385de9d9f69f2beddff"],["/commons-23b416db44a880b7aff3.js","5f3b8827d4fb030632e94deb75aa834d"],["/commons-c8e7307cc7926479a9f7.js","ffdeca48f11a5ecf52502031928b2ae2"],["/commons-e2ae4ca2e6933cda6c93.js","c75e5dcb34403047f05db3e684493232"],["/commons-ebb08adda5783ced737e.js","0ef648c26011973a1f7f4d17b7ed8c80"],["/index.html","eca48049085ace288854561d895e137d"],["/manifest.json","85fe412fa0adabbc4ee14afbdbddda6b"],["/manifest.webmanifest","ac2331ffa890a7fbb0c904c9079ef4af"],["/offline-plugin-app-shell-fallback/index.html","693d4e17fb6d6dec54feed9622297d98"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
@@ -45,7 +45,7 @@ var ignoreUrlParametersMatching = [/^utm_/];
 
 
 
-var addDirectoryIndex = function (originalUrl, index) {
+var addDirectoryIndex = function(originalUrl, index) {
     var url = new URL(originalUrl);
     if (url.pathname.slice(-1) === '/') {
       url.pathname += index;
@@ -53,7 +53,7 @@ var addDirectoryIndex = function (originalUrl, index) {
     return url.toString();
   };
 
-var cleanResponse = function (originalResponse) {
+var cleanResponse = function(originalResponse) {
     // If this is not a redirected response, then we don't have to do anything.
     if (!originalResponse.redirected) {
       return Promise.resolve(originalResponse);
@@ -75,7 +75,7 @@ var cleanResponse = function (originalResponse) {
     });
   };
 
-var createCacheKey = function (originalUrl, paramName, paramValue,
+var createCacheKey = function(originalUrl, paramName, paramValue,
                            dontCacheBustUrlsMatching) {
     // Create a new URL object to avoid modifying originalUrl.
     var url = new URL(originalUrl);
@@ -91,7 +91,7 @@ var createCacheKey = function (originalUrl, paramName, paramValue,
     return url.toString();
   };
 
-var isPathWhitelisted = function (whitelist, absoluteUrlString) {
+var isPathWhitelisted = function(whitelist, absoluteUrlString) {
     // If the whitelist is empty, then consider all URLs to be whitelisted.
     if (whitelist.length === 0) {
       return true;
@@ -104,7 +104,7 @@ var isPathWhitelisted = function (whitelist, absoluteUrlString) {
     });
   };
 
-var stripIgnoredUrlParameters = function (originalUrl,
+var stripIgnoredUrlParameters = function(originalUrl,
     ignoreUrlParametersMatching) {
     var url = new URL(originalUrl);
     // Remove the hash; see https://github.com/GoogleChrome/sw-precache/issues/290
