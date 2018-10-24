@@ -6,13 +6,14 @@ import styled from "styled-components"
 import "./main.css"
 
 const App = styled.main`
-  max-width: 550px;
+  max-width: 700px;
   padding: 1.5rem;
   margin: 0 auto;
 
   a {
     color: #2d9cdb;
     text-decoration: none;
+    word-break: break-word;
 
     &:hover {
       text-decoration: underline;
@@ -25,8 +26,14 @@ const Layout: React.SFC<ILayoutProps> = ({ children }) => (
     <Helmet>
       <html lang="en" />
       <title>Daniel Ström</title>
-      <meta name="description" content="I'm Daniel, a web developer, and this is where I write about thoughts I've had or things I've done." />
-      <meta name="keywords" content="blog, tech, programming, software development, culture, leadership, coaching" />
+      <meta
+        name="description"
+        content="I'm Daniel, a web developer, and this is where I write about thoughts I've had or things I've done."
+      />
+      <meta
+        name="keywords"
+        content="blog, tech, programming, software development, culture, leadership, coaching"
+      />
     </Helmet>
 
     <App>

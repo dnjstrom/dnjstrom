@@ -43,6 +43,7 @@ module.exports = {
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-autolink-headers",
           "gatsby-remark-smartypants",
+          "gatsby-remark-embed-gist",
           {
             resolve: `gatsby-remark-images`,
             options: {
