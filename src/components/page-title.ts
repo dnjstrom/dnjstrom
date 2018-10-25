@@ -11,8 +11,8 @@ const wiggle = keyframes`
 `
 
 const PageTitle = styled.h2`
-  line-height: 6rem;
-  font-size: 6rem;
+  line-height: 5rem;
+  font-size: 5rem;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;

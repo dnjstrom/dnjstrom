@@ -1,7 +1,7 @@
 ---
 path: "/blog/web-animation-and-the-render-pipeline"
 date: "2018-10-25T00:00:00.000Z"
-title: "Web Animation and the Render Pipeline!"
+title: "Web Animation and the Render Pipeline"
 cover_image: "./happening-london-434316-unsplash.jpg"
 cover_image_caption: "Just like the render pipeline - a carousel goes round at blazing speeds, produces stunning visuals, and may cause motion sickness if you are not careful."
 tags: web animation performance
@@ -138,6 +138,8 @@ Counter-intuitively, it is more performant to rotate an element in 3D than it is
 As we have seen, each step in the pipeline has implications for what choices to make when animating but also necessitates updates in each subsequent step of the pipeline. As such it is better to try and keep changes towards the end of the pipeline in order to avoid cascading updates.
 
 <p data-height="387" data-theme-id="0" data-slug-hash="zmmoKd" data-default-tab="result" data-user="dnjstrom" data-pen-title="Spinner" class="codepen">See the Pen <a href="https://codepen.io/dnjstrom/pen/zmmoKd/">Spinner</a> by Daniel Ström (<a href="https://codepen.io/dnjstrom">@dnjstrom</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+> Our completed, highly performant, spinner - in all its glory.
 
 Now more familiar with the five steps of the render pipeline, my hope is that exploring web animations will feel more approachable and fun to you, and for the guidelines above to provide a framework for safe exploration. Together, we should put animation to use in making the web more user friendly and delightful  -  in aesthetics as well as performance.
 
